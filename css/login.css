@@ -1,0 +1,103 @@
+body {
+    background: rgb(86, 128, 210);
+    background: linear-gradient(151deg, rgba(86, 128, 210, 1) 0%, rgba(201, 168, 218, 1) 100%);
+    background-size: cover;
+    height: 100vh;
+    font-family: 'Albert Sans';
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+}
+
+label {
+    font-size: 17px;
+    opacity: 60%;
+}
+
+#login-container {
+    background-color: #bebebe;
+    width: 400px;
+    height: fit-content;
+    padding: 60px 20px;
+    border-radius: 5px;
+    margin: 5% auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .2);
+}
+
+select {
+    margin-bottom: 25px;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+button {
+    display: block;
+    width: 350px;
+    margin: 5px auto;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#select-user {
+    width: 400px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .4);
+    border-radius: 3px;
+}
+
+#container {
+    background-color: #bebebe6e;
+    height: 510px;
+    margin: 30px auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    padding: 10px;
+    margin: 20px auto;
+
+    & br {
+        display: none;
+    }
+
+    & input {
+        width: 97%;
+        height: 30px;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+        border-bottom: 1px solid #000;
+        outline: none;
+    }
+
+    & #select-user {
+        width: 100%;
+        padding: 8px;
+    }
+
+    & button {
+        font-size: 18px;
+        font-weight: 700;
+        height: 50px;
+    }
+}
+
+img {
+    width: 40%;
+}
