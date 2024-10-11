@@ -38,15 +38,15 @@ const conceitos = document.getElementById('conceitos');
 
 
 inicio.addEventListener('click', () => {
-    window.location.href = '/frontend/coordenador/home.html'
+    window.location.href = '../coordenador/home.html'
 })
 
 comunicados.addEventListener('click', () => {
-    window.location.href = '/frontend/coordenador/comunicados.html'
+    window.location.href = '../coordenador/comunicados.html'
 })
 
 conceitos.addEventListener('click', () => {
-    window.location.href = '/frontend/coordenador/conceitos.html'
+    window.location.href = '../coordenador/conceitos.html'
 })
 
 const token = localStorage.getItem('token');
