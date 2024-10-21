@@ -9,6 +9,7 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+// Abrir opções de usuário
 const pfp = document.querySelector('#pfp');
 
 pfp.addEventListener('click', () => {
@@ -50,6 +51,13 @@ conceitos.addEventListener('click', () => {
 })
 
 const token = localStorage.getItem('token');
+
+const atalhoComunicado = document.getElementById('comunicados-atalho');
+// const atalhoConceitos = document.getElementById('conceitos-atalho');
+
+atalhoComunicado.addEventListener('click', () => {
+    document.getElementById('formulario').style.display = 'block';
+})
 
 // Abrir/Fechar forms
 const btnRegistrar = document.getElementById('registrar');

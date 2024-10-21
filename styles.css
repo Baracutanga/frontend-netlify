@@ -416,7 +416,7 @@ section {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    height: 100vh;
+    height: 100%;
     padding: 20px;
 }
 
@@ -449,6 +449,78 @@ section {
 
     & img {
         width: 50%;
+    }
+}
+
+form {
+    background-color: #E8E8E8;
+    position: absolute;
+    width: 18%;
+    top: 18%;
+    left: 43%;
+    z-index: 4;
+    padding: 40px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+    display: none;
+
+    & h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    & select,
+    input {
+        border-radius: 3px;
+        outline: none;
+        font-size: 17px;
+        border: 1px solid rgba(0, 0, 0, .2);
+    }
+
+    & label {
+        font-size: 17px;
+        margin: 0px auto;
+    }
+
+    & input {
+        margin: 0px auto;
+        font-family: 'Albert Sans';
+        width: 93.5%;
+        padding: 5px;
+        margin-bottom: 20px;
+        /* height: 30px; */
+    }
+
+    & select {
+        font-family: 'Albert Sans';
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    & button {
+        font-family: 'Albert Sans';
+        background-color: #21618C;
+        color: rgba(255, 255, 255, .5);
+        border: 1px solid rgba(0, 0, 0, .2);
+        padding: 5px 10px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    & button:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    & div {
+        display: flex;
+        justify-content: end;
+        width: 100%;
+
+        & img {
+            width: 10%;
+            cursor: pointer;
+        }
     }
 }
 
