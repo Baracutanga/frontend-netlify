@@ -9,8 +9,12 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+<<<<<<< HEAD
 const URL = 'http://localhost:8000/api'
 
+=======
+// Abrir opções de usuário
+>>>>>>> da0507da988addb928f2b49775d9e534b1de4c19
 const pfp = document.querySelector('#pfp');
 
 // pfp.addEventListener('click', () => {
@@ -35,6 +39,18 @@ conceitos.addEventListener('click', () => {
     window.location.href = '../coordenador/conceitos.html'
 })
 
+<<<<<<< HEAD
+=======
+const token = localStorage.getItem('token');
+
+const atalhoComunicado = document.getElementById('comunicados-atalho');
+// const atalhoConceitos = document.getElementById('conceitos-atalho');
+
+atalhoComunicado.addEventListener('click', () => {
+    document.getElementById('formulario').style.display = 'block';
+})
+
+>>>>>>> da0507da988addb928f2b49775d9e534b1de4c19
 // Abrir/Fechar forms
 const btnRegistrar = document.getElementById('registrar');
 const closeBtn = document.getElementById('close-icon');
