@@ -9,27 +9,13 @@ if ('serviceWorker' in navigator) {
     });
 }
 
+const URL = 'http://localhost:8000/api'
+
 const pfp = document.querySelector('#pfp');
 
-pfp.addEventListener('click', () => {
+// pfp.addEventListener('click', () => {
 
-})
-
-// Abrir menu mobile
-const menuBurguer = document.getElementById('menu-burger');
-const menu = document.getElementById('menu-mobile');
-
-menuBurguer.addEventListener('click', () => {
-    if (menu.classList.contains('menu-aberto')) {
-        // Fecha o menu
-        menuBurguer.src = '../icons/menu-burger.svg';
-        menu.classList.remove('menu-aberto');
-    } else {
-        // Abre o menu
-        menuBurguer.src = '../icons/caret-down.svg';
-        menu.classList.add('menu-aberto');
-    }
-});
+// })
 
 // Páginas
 const inicio = document.getElementById('home');
@@ -37,9 +23,9 @@ const comunicados = document.getElementById('comunicados');
 const conceitos = document.getElementById('conceitos');
 
 
-inicio.addEventListener('click', () => {
-    window.location.href = '../coordenador/home.html'
-})
+// inicio.addEventListener('click', () => {
+//     window.location.href = '../coordenador/home.html'
+// })
 
 comunicados.addEventListener('click', () => {
     window.location.href = '../coordenador/comunicados.html'
@@ -48,8 +34,6 @@ comunicados.addEventListener('click', () => {
 conceitos.addEventListener('click', () => {
     window.location.href = '../coordenador/conceitos.html'
 })
-
-const token = localStorage.getItem('token');
 
 // Abrir/Fechar forms
 const btnRegistrar = document.getElementById('registrar');
@@ -71,14 +55,18 @@ const formAluno = document.querySelector('#form-alunos');
 const formDisciplina = document.getElementById('form-disciplina');
 const formTurma = document.getElementById('form-turmas');
 const formCoord = document.querySelector('#form-coordenador');
+const login = document.querySelector('#login-form');
 
 // Inputs
 const inputNome = document.querySelector('#nome-input');
 const inputEmail = document.querySelector('#email-input');
 const inputSenha = document.querySelector('#senha-input');
+const emailLogin = document.querySelector('#input-email');
+const senhaLogin = document.querySelector('#input-senha');
 const selectProf = document.getElementById('select-professor');
 const selectTurno = document.getElementById('select-turno')
 const selectTurma = document.getElementById('select-turma');
+const selectUser = document.querySelector('#select-user');
 
 formAluno.addEventListener('submit', async (event) => {
     event.preventDefault();

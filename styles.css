@@ -380,7 +380,7 @@ header {
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) and (min-width: 320px) {
     header {
         & img {
             width: 25%;
