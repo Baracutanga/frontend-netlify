@@ -9,12 +9,8 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-<<<<<<< HEAD
 const URL = 'http://localhost:8000/api'
 
-=======
-// Abrir opções de usuário
->>>>>>> da0507da988addb928f2b49775d9e534b1de4c19
 const pfp = document.querySelector('#pfp');
 
 // pfp.addEventListener('click', () => {
