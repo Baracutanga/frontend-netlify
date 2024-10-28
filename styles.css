@@ -302,7 +302,7 @@ header {
     }
 
     & #menu-burger {
-        width: 10%;
+        width: 14%;
         margin: 0px 40px 0px 20px;
     }
 
@@ -339,7 +339,12 @@ header {
     }
 
     #menu-mobile {
+        position: absolute;
         display: flex;
         flex-direction: column;
+        top: -505px;
+    }
+
+    #menu-mobile.open {
     }
 }
